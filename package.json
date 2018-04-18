@@ -1,0 +1,48 @@
+{
+  "name": "timecloud-core",
+  "version": "1.0.0",
+  "description": "A distributed scheduling system based on Node.js (core)",
+  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text --reporter=json --report-dir .cov mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iblueio/timecloud-core"
+  },
+  "keywords": [
+    "job",
+    "jobs",
+    "cron",
+    "delayed",
+    "scheduler",
+    "runner"
+  ],
+  "author": "Bingmang <ustbbingmang@foxmail.com> (http://iblue.tech/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iblueio/timecloud-core/issues"
+  },
+  "dependencies": {
+    "cron": "~1.3.0",
+    "date.js": "~0.3.2",
+    "debug": "~3.1.0",
+    "human-interval": "~0.1.3",
+    "moment-timezone": "~0.5.0",
+    "mongodb": "~2.2.33"
+  },
+  "devDependencies": {
+    "blanket": "^1.2.3",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.9.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^11.6.0",
+    "q": "^1.5.0",
+    "xo": "^0.18.2"
+  }
+}
